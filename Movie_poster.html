@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Avengers: Doomsday</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700;900&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+    <link rel="stylesheet" href="Doomsday.css">
+</head>
+
+<body>
+
+<!-------------------- Loading Screen ------------------>
+
+<div id="loader">
+
+    <div class="loader-logo">
+
+        AVENGERS
+
+        <span>DOOMSDAY</span>
+
+    </div>
+
+</div>
+
+<!-------------------- Background ------------------>
+
+<video autoplay muted loop playsinline id="bg-video">
+
+    <source src="assets/video/background.mp4" type="video/mp4">
+
+</video>
+
+<div id="video-overlay"></div>
+
+<canvas id="lightningCanvas"></canvas>
+
+<div id="particles-js"></div>
+
+<!-------------------- Navigation ------------------>
+
+<nav>
+
+    <div class="logo">
+
+        AVENGERS
+
+    </div>
+
+    <ul>
+
+        <li><a href="#hero">Home</a></li>
+
+        <li><a href="#story">Story</a></li>
+
+        <li><a href="#cast">Cast</a></li>
+
+        <li><a href="#timeline">Timeline</a></li>
+
+        <li><a href="#countdown">Countdown</a></li>
+
+    </ul>
+
+</nav>
+
+<!-------------------- Hero ------------------>
+
+<section id="hero">
+
+    <div class="hero-content">
+
+        <h3>MARVEL STUDIOS PRESENTS</h3>
+
+        <h1>
+
+            AVENGERS
+
+            <span>DOOMSDAY</span>
+
+        </h1>
+
+        <p>
+
+            The Multiverse Will Never Be The Same.
+
+        </p>
+
+        <div class="hero-panels">
+
+            <div class="glass-box">
+
+                <h4>LIVE CLOCK</h4>
+
+                <h2 id="clock">
+
+                    00:00:00
+
+                </h2>
+
+            </div>
+
+            <div class="glass-box">
+
+                <h4>RELEASE COUNTDOWN</h4>
+
+                <div id="timer">
+
+                    <span>000</span>
+
+                    <small>DAYS</small>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <a href="#story" class="btn">
+
+            ENTER THE MULTIVERSE
+
+        </a>
+
+    </div>
+
+</section>
+
+<!-------------------- Story ------------------>
+
+<section id="story">
+
+    <h2 class="section-title">
+
+        STORY OVERVIEW
+
+    </h2>
+
+    <div class="glass-panel">
+
+        <p>
+
+            As the Multiverse begins collapsing, heroes from different realities
+            unite against one of Marvel's greatest threats.
+
+            Every decision from the Infinity Saga and Multiverse Saga converges
+            toward a single catastrophic event...
+
+            <strong>DOOMSDAY.</strong>
+
+        </p>
+
+    </div>
+
+</section>
+
+<!-------------------- Cast ------------------>
+
+<section id="cast">
+
+    <h2 class="section-title">
+
+        CONFIRMED CAST
+
+    </h2>
+
+    <div class="card-grid">
+
+        <div class="flip-card">
+
+            <div class="flip-inner">
+
+                <div class="flip-front">
+
+                    <img src="assets/cast/doom.jpg">
+
+                    <h3>Doctor Doom</h3>
+
+                </div>
+
+                <div class="flip-back">
+
+                    <h3>Doctor Doom</h3>
+
+                    <p>Main antagonist of Doomsday.</p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="flip-card">
+
+            <div class="flip-inner">
+
+                <div class="flip-front">
+
+                    <img src="assets/cast/reed.jpg">
+
+                    <h3>Reed Richards</h3>
+
+                </div>
+
+                <div class="flip-back">
+
+                    <p>Leader of Fantastic Four.</p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="flip-card">
+
+            <div class="flip-inner">
+
+                <div class="flip-front">
+
+                    <img src="assets/cast/sue.jpg">
+
+                    <h3>Sue Storm</h3>
+
+                </div>
+
+                <div class="flip-back">
+
+                    <p>The Invisible Woman.</p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="flip-card">
+
+            <div class="flip-inner">
+
+                <div class="flip-front">
+
+                    <img src="assets/cast/thing.jpg">
+
+                    <h3>The Thing</h3>
+
+                </div>
+
+                <div class="flip-back">
+
+                    <p>Marvel's strongest rock hero.</p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-------------------- Timeline ------------------>
+
+<section id="timeline">
+
+    <h2 class="section-title">
+
+        MCU WATCH ORDER
+
+    </h2>
+
+    <div class="timeline">
+
+        <div class="timeline-item">
+
+            <span>2008</span>
+
+            <h3>Iron Man</h3>
+
+        </div>
+
+        <div class="timeline-item">
+
+            <span>2012</span>
+
+            <h3>The Avengers</h3>
+
+        </div>
+
+        <div class="timeline-item">
+
+            <span>2018</span>
+
+            <h3>Infinity War</h3>
+
+        </div>
+
+        <div class="timeline-item">
+
+            <span>2019</span>
+
+            <h3>Endgame</h3>
+
+        </div>
+
+        <div class="timeline-item">
+
+            <span>2021</span>
+
+            <h3>Loki</h3>
+
+        </div>
+
+        <div class="timeline-item">
+
+            <span>2022</span>
+
+            <h3>Doctor Strange 2</h3>
+
+        </div>
+
+        <div class="timeline-item">
+
+            <span>2024</span>
+
+            <h3>Deadpool & Wolverine</h3>
+
+        </div>
+
+        <div class="timeline-item final">
+
+            <span>2026</span>
+
+            <h3>AVENGERS : DOOMSDAY</h3>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-------------------- Countdown ------------------>
+
+<section id="countdown">
+
+    <h2 class="section-title">
+
+        RELEASE COUNTDOWN
+
+    </h2>
+
+    <div class="count-grid">
+
+        <div>
+
+            <h1 id="days">000</h1>
+
+            <p>Days</p>
+
+        </div>
+
+        <div>
+
+            <h1 id="hours">00</h1>
+
+            <p>Hours</p>
+
+        </div>
+
+        <div>
+
+            <h1 id="minutes">00</h1>
+
+            <p>Minutes</p>
+
+        </div>
+
+        <div>
+
+            <h1 id="seconds">00</h1>
+
+            <p>Seconds</p>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-------------------- Music ------------------>
+
+<button id="musicBtn">
+
+    <i class="fa-solid fa-volume-high"></i>
+
+</button>
+
+<audio id="bgMusic" loop>
+
+    <source src="assets/music/theme.mp3">
+
+</audio>
+
+<!-------------------- Doom Mask ------------------>
+
+<div id="doom-mask">
+
+    <img src="assets/images/doom-mask.png"
+         alt="Doctor Doom">
+
+</div>
+
+<!-------------------- Footer ------------------>
+
+<footer>
+
+    <h2>
+
+        AVENGERS : DOOMSDAY
+
+    </h2>
+
+    <p>
+
+        Fan-made cinematic experience inspired by Marvel Studios.
+
+    </p>
+
+    <div class="socials">
+
+        <i class="fab fa-youtube"></i>
+
+        <i class="fab fa-instagram"></i>
+
+        <i class="fab fa-x-twitter"></i>
+
+        <i class="fab fa-facebook"></i>
+
+    </div>
+
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+
+<script src="Doomsday.js"></script>
+
+</body>
+
+</html>
